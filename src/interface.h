@@ -1,6 +1,6 @@
 /*
 "LettersFall" - Open-source cross-platform educational word spelling game.
-Copyright (C) 2018  Jesse Palser
+Copyright (C) 2019  Jesse Palser
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License

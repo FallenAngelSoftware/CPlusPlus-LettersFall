@@ -1,6 +1,6 @@
 /*
 "LettersFall" - Open-source cross-platform educational word spelling game.
-Copyright (C) 2018  Jesse Palser
+Copyright (C) 2019  Jesse Palser
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -407,7 +407,7 @@ void Screens::DisplayTitleScreen(void)
         interface->DisplayAllIconsOntoScreenBuffer();
 
 		strcpy( visuals->VariableText, "©");
-        strcat(visuals->VariableText, "2018, By Team Fallen Angel Software");
+        strcat(visuals->VariableText, "2019, By Team Fallen Angel Software");
         visuals->DrawTextOntoScreenBuffer(visuals->VariableText, visuals->Font[0]
                                           , 0, 420-3, JustifyCenter, 255, 255, 255, 0, 0, 0);
 
@@ -1908,7 +1908,7 @@ void Screens::DisplayPlayingGameScreen(void)
         {
             visuals->Sprites[0].ScreenX = 320;
             visuals->Sprites[0].ScreenY = 240;
-            visuals->Sprites[0].Transparency = 200;
+            visuals->Sprites[0].Transparency = 255;//200;
             visuals->DrawSpriteOntoScreenBuffer(0);
 
             visuals->DrawTextOntoScreenBuffer("G A M E   P A U S E D", visuals->Font[0]

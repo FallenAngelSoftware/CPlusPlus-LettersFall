@@ -1,6 +1,6 @@
 /*
 "LettersFall" - Open-source cross-platform educational word spelling game.
-Copyright (C) 2018  Jesse Palser
+Copyright (C) 2019  Jesse Palser
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -148,7 +148,7 @@ bool Visuals::InitializeWindow(void)
 SDL_Surface* windowIcon = SDL_LoadBMP("data/visuals/icon.bmp");
 
     Window = NULL;
-    Window = SDL_CreateWindow("''LettersFall[TM]'' - (C)2018 By Team Fallen Angel Software"
+    Window = SDL_CreateWindow("''LettersFall[TM]'' - (C)2019 By Team Fallen Angel Software"
                                  , SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_RESIZABLE);
 
     if (Window == NULL)
@@ -606,7 +606,7 @@ char *reg = new char[4];
     if ( LoadStaffTextIntoMemory("TM", 0) == false)  return(false);
     if ( LoadStaffTextIntoMemory("LettersFall", 0) == false)  return(false);
     strcpy(textToDisplay, copyright);
-    strcat(textToDisplay, "2018, By Team Fallen Angel Software");
+    strcat(textToDisplay, "2019, By Team Fallen Angel Software");
     if ( LoadStaffTextIntoMemory(textToDisplay, 255) == false)  return(false);
     if ( LoadStaffTextIntoMemory("www.FallenAngelSoftware.com", 255) == false)  return(false);
 

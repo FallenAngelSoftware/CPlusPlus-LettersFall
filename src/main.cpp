@@ -1,6 +1,6 @@
 /*
 "LettersFall" - Open-source cross-platform educational word spelling game.
-Copyright (C) 2018  Jesse Palser
+Copyright (C) 2019  Jesse Palser
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -19,7 +19,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 Email the author at: "JessePalser@Gmail.com"
 */
 /*___________________________________________________________________________________________________________________________
-                                                     SDL 2.0.8
+                                                     SDL 2.0.10
                                             Open Source / Cross Platform
   _______ _______     ______   _______    _       _______          _           _______ _                                _ TM
  (_______|_______)   (_____ \ (_______)  (_)     (_______)        | |         (_______) |       Retro Blast Tech!      | |
@@ -30,14 +30,14 @@ Email the author at: "JessePalser@Gmail.com"
                                                                                                        (_____|  Version 2
                                            2-Dimensional Video Game Engine
 
-                              (C)opyright 2018 By Jesse Lee Palser (JessePalser@GMail.com)
+                              (C)opyright 2019 By Jesse Lee Palser (JessePalser@GMail.com)
 .............................................................................................................................
 
                                                   "LettersFall[TM]"
 
                                                Retail3 110% v5.0+ Final
 
-                                    (C)opyright 2018 By Team Fallen Angel Software
+                                    (C)opyright 2019 By Team Fallen Angel Software
                                               www.FallenAngelSoftware.com
 _____________________________________________________________________________________________________________________________*/
 #define SDL_MAIN_HANDLED

@@ -10,7 +10,7 @@
 			<Target title="Debug">
 				<Option output="bin/Debug/GT-R_Engine" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
@@ -20,7 +20,7 @@
 				<Option output="GT-R_Engine" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="../GT-R_Engine" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -44,7 +44,19 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="SDL2_0_10/SDL2_image-2.0.5/i686-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_10/SDL2_mixer-2.0.4/i686-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_10/SDL2_net-2.0.1/i686-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_10/SDL2_ttf-2.0.15/i686-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_10/SDL2-2.0.10/i686-w64-mingw32/include/SDL2" />
 		</Compiler>
+		<Linker>
+			<Add directory="SDL2_0_10/SDL2_image-2.0.5/i686-w64-mingw32/lib" />
+			<Add directory="SDL2_0_10/SDL2_mixer-2.0.4/i686-w64-mingw32/lib" />
+			<Add directory="SDL2_0_10/SDL2_net-2.0.1/i686-w64-mingw32/lib" />
+			<Add directory="SDL2_0_10/SDL2_ttf-2.0.15/i686-w64-mingw32/lib" />
+			<Add directory="SDL2_0_10/SDL2-2.0.10/i686-w64-mingw32/lib" />
+		</Linker>
 		<Unit filename="src/Icon.ico" />
 		<Unit filename="src/audio.cpp" />
 		<Unit filename="src/audio.h" />
