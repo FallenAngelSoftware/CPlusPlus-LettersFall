@@ -1346,7 +1346,7 @@ Uint8 greenBlueColorValue;
         ScreenIsDirty = true;
     }
 
-    if (ScreenIsDirty == 1)
+//    if (ScreenIsDirty == 1)
     {
         visuals->ClearScreenBufferWithColor(0, 0, 0, 255);
 
