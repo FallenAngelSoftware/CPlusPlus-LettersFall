@@ -19,7 +19,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 Email the author at: "JessePalser@Gmail.com"
 */
 /*___________________________________________________________________________________________________________________________
-                                                     SDL 2.0.10
+                                                     SDL 2.0.12
                                             Open Source / Cross Platform
   _______ _______     ______   _______    _       _______          _           _______ _                                _ TM
  (_______|_______)   (_____ \ (_______)  (_)     (_______)        | |         (_______) |       Retro Blast Tech!      | |
@@ -101,9 +101,14 @@ int main( int argc, char* args[] )
 
     data->LoadHighScoresAndOptions();
 
-    if (visuals->FullScreenMode == true)  SDL_SetWindowFullscreen(visuals->Window, SDL_WINDOW_FULLSCREEN_DESKTOP);
+    if (logic->MusicJukebox == true)
+    {
+        logic->SelectedMusicTrack = rand()%9;
+        audio->PlayMusic(logic->SelectedMusicTrack, 1);
+    }
+    else  audio->PlayMusic(logic->SelectedMusicTrack, 0);
 
-    audio->PlayMusic(9, 0);
+    if (visuals->FullScreenMode == true)  SDL_SetWindowFullscreen(visuals->Window, SDL_WINDOW_FULLSCREEN_DESKTOP);
 
     SDL_StartTextInput();
 

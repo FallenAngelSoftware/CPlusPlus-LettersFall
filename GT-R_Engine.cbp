@@ -44,18 +44,22 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="SDL2_0_10/SDL2_image-2.0.5/i686-w64-mingw32/include/SDL2" />
-			<Add directory="SDL2_0_10/SDL2_mixer-2.0.4/i686-w64-mingw32/include/SDL2" />
-			<Add directory="SDL2_0_10/SDL2_net-2.0.1/i686-w64-mingw32/include/SDL2" />
-			<Add directory="SDL2_0_10/SDL2_ttf-2.0.15/i686-w64-mingw32/include/SDL2" />
-			<Add directory="SDL2_0_10/SDL2-2.0.10/i686-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_12/SDL2_image-2.0.5/x86_64-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_12/SDL2_mixer-2.0.4/x86_64-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_12/SDL2_net-2.0.1/x86_64-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_12/SDL2_ttf-2.0.15/x86_64-w64-mingw32/include/SDL2" />
+			<Add directory="SDL2_0_12/SDL2-2.0.12/x86_64-w64-mingw32/include/SDL2" />
 		</Compiler>
 		<Linker>
-			<Add directory="SDL2_0_10/SDL2_image-2.0.5/i686-w64-mingw32/lib" />
-			<Add directory="SDL2_0_10/SDL2_mixer-2.0.4/i686-w64-mingw32/lib" />
-			<Add directory="SDL2_0_10/SDL2_net-2.0.1/i686-w64-mingw32/lib" />
-			<Add directory="SDL2_0_10/SDL2_ttf-2.0.15/i686-w64-mingw32/lib" />
-			<Add directory="SDL2_0_10/SDL2-2.0.10/i686-w64-mingw32/lib" />
+			<Add option="-lSDL2_mixer" />
+			<Add option="-lSDL2_ttf" />
+			<Add option="-lSDL2_image" />
+			<Add option="-lmingw32 -lSDL2main -lSDL2" />
+			<Add directory="SDL2_0_12/SDL2_image-2.0.5/x86_64-w64-mingw32/lib" />
+			<Add directory="SDL2_0_12/SDL2_mixer-2.0.4/x86_64-w64-mingw32/lib" />
+			<Add directory="SDL2_0_12/SDL2_net-2.0.1/x86_64-w64-mingw32/lib" />
+			<Add directory="SDL2_0_12/SDL2_ttf-2.0.15/x86_64-w64-mingw32/lib" />
+			<Add directory="SDL2_0_12/SDL2-2.0.12/x86_64-w64-mingw32/lib" />
 		</Linker>
 		<Unit filename="src/Icon.ico" />
 		<Unit filename="src/audio.cpp" />
@@ -77,9 +81,6 @@
 		<Unit filename="src/visuals.cpp" />
 		<Unit filename="src/visuals.h" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

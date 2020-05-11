@@ -335,12 +335,12 @@ void Screens::DisplaySDLLogoScreen(void)
         ScreenTransitionStatus = FadeAll;
         ScreenToDisplay = TitleScreen;
 
-        if (logic->MusicJukebox == true)
-        {
-            logic->SelectedMusicTrack = rand()%9;
-            audio->PlayMusic(logic->SelectedMusicTrack, 1);
-        }
-        else  audio->PlayMusic(logic->SelectedMusicTrack, 0);
+//        if (logic->MusicJukebox == true)
+//        {
+//            logic->SelectedMusicTrack = rand()%9;
+//            audio->PlayMusic(logic->SelectedMusicTrack, 1);
+//        }
+//        else  audio->PlayMusic(logic->SelectedMusicTrack, 0);
     }
 }
 
